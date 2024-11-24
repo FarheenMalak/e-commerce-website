@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Name</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        .mymain-contaner{
+            background-color: rgb(236, 235, 235);
+        }
+    </style>
+    </head>
+<body>
+     <!-- navbar -->
+     <nav>
+      <ul>
+         <li ><img class="logo" src="images/logo-removebg-preview (1).png" alt=""></li>
+         <li class="btn"><span class="fas fa-bars"></span></li>
+         <div class="items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+         </div>
+      </ul>
+   </nav>
+    <div class="mymain-container">
+    <div class="product-container">
+        <div class="productcont" id="product-list">
+            <div class="product">
+                <div class="product-card">
+                    <div class="logo-cart">
+                        <!--<img src="images/logo.jpg" alt="logo">-->
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                    <div class="main-images">
+                        <img id="blue" class="blue active" id
+                            src="https://www.flashfootwear.com.pk/wp-content/uploads/2021/01/Blue-Air-Vigour-Running-Shoes-for-Kids-2.jpg"
+                            alt="blue">
+                        <img id="pink" class="pink"
+                            src="https://media.istockphoto.com/id/1168124826/photo/pink-shoes-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=G2suY7PbllUE5RAchs96ZV_fLmKxBEuWO1m5cTIvaVc="
+                            alt="blue">
+                        <img id="yellow" class="yellow"
+                            src="https://m.media-amazon.com/images/I/516K+QKZuVL._SL500_.jpg" alt="blue">
+                    </div>
+                    <div class="shoe-details">
+                        <span class="shoe_name productname">ADDIDAS GAZE ZX</span>
+                        <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                    </div>
+                    <div class="color-price">
+                        <div class="color-option" id="color-option">
+                            <span class="color">Colour:</span>
+                            <div class="circles">
+                                <span class="circle blue active" id="blue"></span>
+                                <span class="circle pink " id="pink"></span>
+                                <span class="circle yellow " id="yellow"></span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="price_num myprice">$09.00</span>
+                            <span class="price_letter">Nine dollar only</span>
+                        </div>
+                    </div>
+                    <div class="button addtocart" onclick="addToCart(this.previousElementSibling)" >
+                        <div class="button-layer"></div>
+                        <button >Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+      <div class="product">
+        <div class="product-card">
+            <div class="logo-cart">
+              <!--<img src="images/logo.jpg" alt="logo">-->
+              <i class='bx bx-shopping-bag'></i>
+            </div>
+            <div class="main-images">
+              <img id="blue" class="blue active"
+                src="https://www.reliancedigital.in/medias/Inbase-Urban-Lite-Smart-Watches-491946553-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyODQ0NDh8aW1hZ2UvanBlZ3xpbWFnZXMvaDQxL2hiYS85NDUwMjg5NjU5OTM0LmpwZ3wxMzZmMjEwYzBiNzhmMmU2Yzc1ZDZmZmYwMzA0MmQ4ODg4ZjUwNTY0Yzk3N2M1MWE5MDA2ZjVkZmI4Njg2NmFl"
+                alt="blue">
+              <img id="pink" class="pink"
+                src="https://alfamall.com/pub/media/catalog/product/cache/1a89dbb01e019c7ecb20ce1cadff1320/d/o/dor1-0008.jpg"
+                alt="blue">
+              <img id="yellow" class="yellow" src="https://saamaan.pk/cdn/shop/products/X8Ultra_1024x.jpg?v=1668612863"
+                alt="blue">
+            </div>
+            <div class="shoe-details">
+              <span class="shoe_name productname">SMART WATCHES</span>
+              <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+              <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
+              </div>
+            </div>
+            <div class="color-price">
+              <div class="color-option">
+                <span class="color">Colour:</span>
+                <div class="circles">
+                  <span class="circle blue active" id="blue"></span>
+                  <span class="circle pink " id="pink"></span>
+                  <span class="circle yellow " id="yellow"></span>
+                </div>
+              </div>
+              <div class="price">
+                <span class="price_num myprice">$09.00</span>
+                <span class="price_letter">Nine dollar only</span>
+              </div>
+            </div>
+            <div class="button addtocart" onclick="addToCart(this.previousElementSibling)">
+              <div class="button-layer"></div>
+              <button>Add To Cart</button>
+            </div>
+          </div>    
+      </div>    
+      <div class="product">
+        <div class="product-card">
+            <div class="logo-cart">
+                <!--<img src="images/logo.jpg" alt="logo">-->
+                <i class='bx bx-shopping-bag'></i>
+            </div>
+            <div class="main-images">
+                <img id="blue" class="blue active"
+                  src="https://www.camelbak.com/dw/image/v2/BDBJ_PRD/on/demandware.static/-/Sites-camelbak-master-catalog/default/dw60c0096a/images/large/CB1650404001.jpg?sw=650&sh=650&sm=fit"
+                  alt="blue">
+                <img id="pink" class="pink"
+                  src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/26279016/2023/12/6/e222a626-5178-424f-9632-f627c66c04e81701871995512HydraSipperStainlessSteel900mlBottle1.jpg"
+                  alt="blue">
+                <img id="yellow" class="yellow" src="https://m.media-amazon.com/images/I/31L50Xe6K+L.jpg" alt="blue">
+              </div>
+            <div class="shoe-details">
+                <span class="shoe_name productname">WATER BOTTLES</span>
+                <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="color-price">
+                <div class="color-option" id="color-option">
+                    <span class="color">Colour:</span>
+                    <div class="circles">
+                        <span class="circle blue active" id="blue"></span>
+                        <span class="circle pink " id="pink"></span>
+                        <span class="circle yellow " id="yellow"></span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="price_num myprice">$09.00</span>
+                    <span class="price_letter">Nine dollar only</span>
+                </div>
+            </div>
+            <div class="button addtocart" onclick="addToCart(this.previousElementSibling)" >
+                <div class="button-layer"></div>
+                <button >Add To Cart</button>
+            </div>
+        </div>
+      </div>  
+      <div class="product">
+        <div class="product-card">
+            <div class="logo-cart">
+              <!--<img src="images/logo.jpg" alt="logo">-->
+              <i class='bx bx-shopping-bag'></i>
+            </div>
+            <div class="main-images">
+              <img id="blue" class="blue active"
+                src="https://springs.com.pk/cdn/shop/files/28400003209-DIDNTSHOW.jpg?v=1693042204" alt="blue">
+              <img id="pink" class="pink" src="https://springs.com.pk/cdn/shop/files/28400017305.jpg?v=1693042113"
+                alt="blue">
+              <img id="yellow" class="yellow"
+                src="https://www.cartpk.com/media/catalog/product/cache/ccf016c098f64509830f131aff46d4ef/d/d/ddd_1.jpg"
+                alt="blue">
+            </div>
+            <div class="shoe-details">
+              <span class="shoe_name  productname">SNACKS</span>
+              <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+              <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
+              </div>
+            </div>
+            <div class="color-price">
+              <div class="color-option">
+                <span class="color">Colour:</span>
+                <div class="circles">
+                  <span class="circle blue active" id="blue"></span>
+                  <span class="circle pink " id="pink"></span>
+                  <span class="circle yellow " id="yellow"></span>
+                </div>
+              </div>
+              <div class="price">
+                <span class="price_num myprice">$09.00</span>
+                <span class="price_letter">Nine dollar only</span>
+              </div>
+            </div>
+            <div class="button addtocart" onclick="addToCart(this.previousElementSibling)" >
+              <div class="button-layer"></div>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+      </div>
+      <div class="product">
+        <div class="product-card">
+            <div class="logo-cart">
+              <!--<img src="images/logo.jpg" alt="logo">-->
+              <i class='bx bx-shopping-bag'></i>
+            </div>
+            <div class="main-images">
+              <img id="blue" class="blue active" src="https://woodc.pk/wp-content/uploads/2023/01/jnwjdnf.png" alt="blue">
+              <img id="pink" class="pink" src="https://woodc.pk/wp-content/uploads/2023/06/jefjnvf.jpg" alt="blue">
+              <img id="yellow" class="yellow" src="https://www.paktameer.com/uploads/product-images/borough_800.jpg"
+                alt="blue">
+            </div>
+            <div class="shoe-details">
+              <span class="shoe_name productname">SOFA SET</span>
+              <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+              <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
+              </div>
+            </div>
+            <div class="color-price">
+              <div class="color-option">
+                <span class="color">Colour:</span>
+                <div class="circles">
+                  <span class="circle blue active" id="blue"></span>
+                  <span class="circle pink " id="pink"></span>
+                  <span class="circle yellow " id="yellow"></span>
+                </div>
+              </div>
+              <div class="price">
+                <span class="price_num myprice">$09.00</span>
+                <span class="price_letter">Nine dollar only</span>
+              </div>
+            </div>
+            <div class="button addtocart" onclick="addToCart(this.previousElementSibling)" >
+              <div class="button-layer"></div>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+      </div>
+      <div class="product">
+        <div class="product-card">
+            <div class="logo-cart">
+              <!--<img src="images/logo.jpg" alt="logo">-->
+              <i class='bx bx-shopping-bag'></i>
+            </div>
+            <div class="main-images">
+              <img id="blue" class="blue active"
+                src="https://drromia.com/cdn/shop/files/4_4adfa318-b1ad-4a4f-a380-0bb56d8d7304_800x.png?v=1704531993"
+                alt="blue">
+              <img id="pink" class="pink"
+                src="https://media-cdn.oriflame.com/productImage?externalMediaId=product-management-media%2F43910%2F43910.png%3Fversion%3D1662982202&q=70&w=390&h=390"
+                alt="blue">
+              <img id="yellow" class="yellow"
+                src="https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/6/7/67600fb8904089802796_1.jpg"
+                alt="blue">
+            </div>
+            <div class="shoe-details">
+              <span class="shoe_name productname">FACE WASH</span>
+              <p>Lorem ipsum dolor sit lorenm i amet, consectetur adipisicing elit. Eum, ea, ducimus!</p>
+              <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
+              </div>
+            </div>
+            <div class="color-price">
+              <div class="color-option">
+                <span class="color">Colour:</span>
+                <div class="circles">
+                  <span class="circle blue active" id="blue"></span>
+                  <span class="circle pink " id="pink"></span>
+                  <span class="circle yellow " id="yellow"></span>
+                </div>
+              </div>
+              <div class="price">
+                <span class="price_num" aria-colcount="myprice">$09.00</span>
+                <span class="price_letter">Nine dollar only</span>
+              </div>
+            </div>
+            <div class="button addtocart" onclick="addToCart(this.previousElementSibling)">
+              <div class="button-layer"></div>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+      </div>
+        </div>
+         <!-- Cart container to display items -->
+    <div class="cart-container">
+        <h2>Your Cart <img src="images/shopping-cart.png" alt=""></h2> 
+        <div id="cart-container"></div>
+        <div class="cart-buttons">
+            <button onclick="emptyCart()" id="emptycart">Empty Cart</button>
+            <button onclick="checkout()" id="checkout">Checkout</button>
+        </div>
+    </div>
+    </div> 
+    <div class="search-box">
+      <input class="form-control me-2 search mysearch" type="search" placeholder="Search" aria-label="Search" id="productSearch" >     
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div> 
+    <div class="myfooter">
+      <section class="footer" id="productfooter">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Info</h4>
+              <ul class="links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Compressions</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Collection</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Explore</h4>
+              <ul class="links">
+                <li><a href="#">Free Designs</a></li>
+                <li><a href="#">Latest Designs</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Popular Designs</a></li>
+                <li><a href="#">Art Skills</a></li>
+                <li><a href="#">New Uploads</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <ul class="links">
+                <li><a href="#">Customer Agreement</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">GDPR</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Media Kit</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Newsletter</h4>
+              <p>
+                Subscribe to our newsletter for a weekly dose
+                of news, updates, helpful tips, and
+                exclusive offers.
+              </p>
+              <form action="#">
+                <input type="text" placeholder="Your email" required>
+                <button type="submit">SUBSCRIBE</button>
+              </form>
+              <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+  </div>
+    <script src="index.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
